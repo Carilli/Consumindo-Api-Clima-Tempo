@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 90vw;
+    max-width: 800px;
+    min-height: 70vh;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.23);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.Board {
+    height: 100%;
+    padding: 30px;
+}
+
+.main-title {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.loading-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.loading-container p {
+    margin-top: 15px;
+    color: #666;
+    font-size: 16px;
+}
+
+.SecondCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.city-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.CardBoard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 95vw;
+        min-height: 60vh;
+        border-radius: 15px;
+    }
+
+    .Board {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+    }
+
+    .city-name {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .CardBoard {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        width: 98vw;
+        border-radius: 10px;
+    }
+
+    .Board {
+        padding: 15px;
+    }
+
+    .main-title {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    .city-name {
+        font-size: 1.3rem;
+    }
+}
+
+/* Animações */
+.SecondCard {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

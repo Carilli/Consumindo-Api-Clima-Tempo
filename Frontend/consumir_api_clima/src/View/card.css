@@ -1,0 +1,100 @@
+.MiniCard {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+}
+
+.weather-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-icon-wrapper {
+    margin-bottom: 15px;
+}
+
+.card-title {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-value {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 8px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .MiniCard {
+        min-height: 150px;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-value {
+        font-size: 1.2rem;
+    }
+
+    .card-icon-wrapper {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .MiniCard {
+        min-height: 130px;
+    }
+
+    .card-content {
+        padding: 8px;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+        margin: 8px 0;
+    }
+
+    .card-value {
+        font-size: 1.1rem;
+    }
+}
+
+.MiniCard {
+    animation: slideInUp 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.MiniCard:nth-child(1) { animation-delay: 0.1s; }
+.MiniCard:nth-child(2) { animation-delay: 0.2s; }
+.MiniCard:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

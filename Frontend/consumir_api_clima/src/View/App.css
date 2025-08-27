@@ -1,0 +1,18 @@
+.princ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: rgba(228, 228, 228, 0.28);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .princ {
+        padding: 10px;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+}

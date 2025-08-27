@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f5f5f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ant-input {
+  border-radius: 8px !important;
+}
+
+.ant-btn {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+.ant-btn-primary {
+  background: rgba(28, 123, 161, 0.71) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+}
+
+.ant-btn-primary:hover {
+  background: rgba(20, 84, 110, 0.71) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(33, 168, 223, 0.36) !important;
+}
+
+.ant-alert {
+  border-radius: 10px !important;
+}
+
+.ant-card {
+  border-radius: 15px !important;
+}
